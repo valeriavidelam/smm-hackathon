@@ -1,7 +1,6 @@
 import './App.css';
-//import Button from '@material-ui/core/Button';
 import {ThemeProvider} from '@material-ui/core/styles';
-import theme from './themeConfig';
+import theme from './themeConfig'
 import Navbar from './components/Navbar';
 import Profile from './components/Profile';
 import Home from './components/Home';

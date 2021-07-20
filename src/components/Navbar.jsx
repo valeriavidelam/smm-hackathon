@@ -26,11 +26,11 @@ const useStyles = makeStyles(theme =>({
 
 const Navbar = () => {
   const classes = useStyles()
-  const [open, setOpen] = React.useState(false);
+  const [openMenu, setOpenMenu] = React.useState(false);
   const anchorRef = React.useRef(null);
 
   const handleToggle = () => {
-    setOpen((prevOpen) => !prevOpen);
+    setOpenMenu((prevOpen) => !prevOpen);
   };
 
   const handleClose = (event) => {
@@ -38,32 +38,32 @@ const Navbar = () => {
       return;
     }
 
-    setOpen(false);
+    setOpenMenu(false);
   };
 
   function handleListKeyDown(event) {
     if (event.key === 'Tab') {
       event.preventDefault();
-      setOpen(false);
+      setOpenMenu(false);
     }
   }
 
   // return focus to the button when we transitioned from !open -> open
-  const prevOpen = React.useRef(open);
+  const prevOpen = React.useRef(openMenu);
   React.useEffect(() => {
-    if (prevOpen.current === true && open === false) {
+    if (prevOpen.current === true && openMenu === false) {
       anchorRef.current.focus();
     }
 
-    prevOpen.current = open;
-  }, [open]);
+    prevOpen.current = openMenu;
+  }, [openMenu]);
 
   return (
     <div>
       <AppBar className={classes.customBar} >
         <Toolbar>
             <div className='logoHeader'>
-              <img src={logo} alt="logo" width="83px"></img>
+              <a href ="/home"><img src={logo} alt="logo" width="83px"></img></a>
             </div> 
           <Typography variant="h7" color="secondary">
             Hola, María José
@@ -74,12 +74,12 @@ const Navbar = () => {
               aria-label="menu" 
               className={classes.menuButton}
               ref={anchorRef}
-              aria-controls={open ? 'menu-list-grow' : undefined}
+              aria-controls={openMenu ? 'menu-list-grow' : undefined}
               aria-haspopup="true"
               onClick={handleToggle}>
               <MenuIcon />
             </IconButton>
-            <Popper open={open} anchorEl={anchorRef.current} role={undefined} transition disablePortal>
+            <Popper open={openMenu} anchorEl={anchorRef.current} role={undefined} transition disablePortal>
           {({ TransitionProps, placement }) => (
             <Grow
               {...TransitionProps}
@@ -87,7 +87,7 @@ const Navbar = () => {
             >
               <Paper>
                 <ClickAwayListener onClickAway={handleClose}>
-                  <MenuList autoFocusItem={open} id="menu-list-grow" onKeyDown={handleListKeyDown}>
+                  <MenuList autoFocusItem={openMenu} id="menu-list-grow" onKeyDown={handleListKeyDown}>
                     <MenuItem onClick={handleClose}>Reservar escritorio</MenuItem>
                     <MenuItem onClick={handleClose}>Agendar reunión</MenuItem>
                     <MenuItem onClick={handleClose}>Buscar colaborador</MenuItem>

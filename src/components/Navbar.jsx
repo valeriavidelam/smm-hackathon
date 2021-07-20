@@ -66,10 +66,13 @@ const Navbar = () => {
               <a href ="/home"><img src={logo} alt="logo" width="83px"></img></a>
             </div> 
           <Typography variant="h6">
+          <Typography variant="h7" color="secondary">
+          <Typography variant="h7">
             Hola, María José
           </Typography>
           <div>
             <IconButton 
+              color="primary" 
               color="inherit" 
               aria-label="menu" 
               className={classes.menuButton}

@@ -12,6 +12,7 @@ import Popper from '@material-ui/core/Popper';
 import ClickAwayListener from '@material-ui/core/ClickAwayListener';
 import MenuItem from '@material-ui/core/MenuItem';
 import MenuList from '@material-ui/core/MenuList';
+import { useHistory } from "react-router-dom";
 
 const useStyles = makeStyles(theme =>({
   offset: theme.mixins.toolbar,
@@ -34,12 +35,20 @@ const Navbar = () => {
   };
 
   const handleClose = (event) => {
+    console.log(event);
     if (anchorRef.current && anchorRef.current.contains(event.target)) {
       return;
     }
 
     setOpenMenu(false);
   };
+
+  let history = useHistory();
+  const openLogoutConfirmation = (event)=>{
+    event.preventDefault();
+    history.push('/')
+    setOpenMenu(false);
+  }  
 
   function handleListKeyDown(event) {
     if (event.key === 'Tab') {
@@ -63,9 +72,9 @@ const Navbar = () => {
       <AppBar className={classes.customBar} >
         <Toolbar>
             <div className='logoHeader'>
-              <a href ="/home"><img src={logo} alt="logo" width="83px"></img></a>
+              <a href ="/"><img src={logo} alt="logo" width="83px"></img></a>
             </div> 
-          <Typography variant="h7" color="secondary">
+          <Typography variant="h6" color="secondary">
             Hola, María José
           </Typography>
           <div>
@@ -88,13 +97,13 @@ const Navbar = () => {
               <Paper>
                 <ClickAwayListener onClickAway={handleClose}>
                   <MenuList autoFocusItem={openMenu} id="menu-list-grow" onKeyDown={handleListKeyDown}>
-                    <MenuItem onClick={handleClose}>Reservar escritorio</MenuItem>
-                    <MenuItem onClick={handleClose}>Agendar reunión</MenuItem>
-                    <MenuItem onClick={handleClose}>Buscar colaborador</MenuItem>
+                    <MenuItem onClick={()=> history.push('reservarescritorio')}>Reservar escritorio</MenuItem>
+                    <MenuItem onClick={()=> history.push('reservarsala')}>Reservar sala</MenuItem>
+                    <MenuItem onClick={()=> history.push('buscarcolaborador')}>Buscar colaborador</MenuItem>
                     <MenuItem onClick={handleClose}>Reportar un problema</MenuItem>
                     <MenuItem onClick={handleClose}>Mis reservas</MenuItem>
-                    <MenuItem onClick={handleClose}>Mi perfil</MenuItem>
-                    <MenuItem onClick={handleClose}>Cerra sesión</MenuItem>
+                    <MenuItem onClick={()=> history.push('perfil')}>Mi perfil</MenuItem>
+                    <MenuItem onClick={openLogoutConfirmation}>Cerrar sesión</MenuItem>
                   </MenuList>
                 </ClickAwayListener>
               </Paper>

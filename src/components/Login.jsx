@@ -2,6 +2,8 @@
 import React from 'react';
 import LogoEG from '../assets/img/LogoEG.png';
 import LogoSmm from '../assets/img/LogoSmm.png';
+import Button from '@material-ui/core/Button'
+
 
 const Login = () => {
 
@@ -45,7 +47,10 @@ const Login = () => {
         onChange={ (e) => setPass(e.target.value) }/>
       </form>
       <a href="Olvidaste tu contraseña">¿Olvidaste tu contraseña?</a>
-      <button className="entry">Ingresar</button>
+
+      <Button variant="text" color="primary">
+        Ingresar
+      </Button>
     </div>
   )
 }

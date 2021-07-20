@@ -3,6 +3,7 @@ import React from 'react';
 import LogoEG from '../assets/img/LogoEG.png';
 import LogoSmm from '../assets/img/LogoSmm.png';
 import Button from '@material-ui/core/Button'
+import Link from '@material-ui/core/Link'
 
 
 const Login = () => {
@@ -46,9 +47,18 @@ const Login = () => {
         placeholder="Contraseña" 
         onChange={ (e) => setPass(e.target.value) }/>
       </form>
-      <a href="Olvidaste tu contraseña">¿Olvidaste tu contraseña?</a>
+      
+      <Link
+        component="button"
+        variant="body2"
+        onClick={() => {
+          console.info("I'm a button.");
+        }}
+      >       
+        ¿Olvidaste tu contraseña?
+      </Link>
 
-      <Button variant="text" color="primary">
+      <Button variant="outlined" color="primary">
         Ingresar
       </Button>
     </div>

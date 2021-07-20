@@ -65,20 +65,12 @@ const Navbar = () => {
             <div className='logoHeader'>
               <img src={logo} alt="logo" width="83px"></img>
             </div> 
-<<<<<<< HEAD
           <Typography variant="h7" color="secondary">
-=======
-          <Typography variant="h7">
->>>>>>> 60b40cd13aaf24ae33ca54253bd2c32132b0e315
             Hola, María José
           </Typography>
           <div>
             <IconButton 
-<<<<<<< HEAD
               color="primary" 
-=======
-              color="inherit" 
->>>>>>> 60b40cd13aaf24ae33ca54253bd2c32132b0e315
               aria-label="menu" 
               className={classes.menuButton}
               ref={anchorRef}

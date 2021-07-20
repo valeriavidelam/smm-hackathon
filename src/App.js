@@ -8,31 +8,42 @@ import {
   BrowserRouter as Router,
   Switch,
   Route} from 'react-router-dom';
+import BookingDesk from './components/BookingDesk';
+import BookingRoom from './components/BookingRoom';
+import SearchCollaborator from './components/SearchCollaborator';
 
 
 function App() {
 
 
-  return (
-    <ThemeProvider theme={theme}>
-      <Router>
-    <div>
-      <Switch>
-        <Route path="/profile">
-          <Profile />
-        </Route>
-        <Route path="/home">
-          <Home />  
-        </Route>
-        <Route path="/">
-          <Login />  
-        </Route>
-    </Switch>
-  </div> 
-</Router>
-
-    </ThemeProvider>
-    
+return (
+  <ThemeProvider theme={theme}>
+    <Router>
+      <div>
+        <Switch>
+          <Route path="/reservaescritorio">
+            <BookingDesk />
+          </Route>
+          <Route path="/reservasala">
+            <BookingRoom />
+          </Route>
+          <Route path="/buscarcolaborador">
+            <SearchCollaborator />
+          </Route>
+          <Route path="/perfil">
+            <Profile />
+          </Route>
+          <Route path="/inicio">
+            <Home />  
+          </Route>
+          <Route path="/">
+            <Login />  
+          </Route>
+         </Switch>
+      </div> 
+    </Router>
+  </ThemeProvider>
+  
   );
 }
 

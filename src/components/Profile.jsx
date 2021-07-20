@@ -9,7 +9,7 @@ const Profile = () => {
       <Navbar />
       <h1>Acá va el perfil</h1>
       <Button color="primary" 
-      variant="contained"
+      variant="outlined"
       disableElevation>
         BOTON
       </Button>

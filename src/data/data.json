@@ -1,6 +1,5 @@
 {
-  "name": "Oficina Santiago",
-  "Zonas de Trabajo": [
+  "zonasDeTrabajo": [
     {
       "id": "G_1",
       "nombre": "G_1",

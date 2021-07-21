@@ -13,7 +13,6 @@ import SearchCollaborator from './components/SearchCollaborator';
 import BookingDesk from './components/BookingDesk';
 import SuccessfulBooking from './components/SuccessfulBooking';
 
-
 function App() {
 
 
@@ -22,6 +21,12 @@ return (
     <Router>
       <div>
         <Switch>
+          <Route path="/" exact>
+            <Login />  
+          </Route>
+          <Route path="/inicio">
+            <Home />  
+          </Route>
           <Route path="/reservaexitosa">
             <SuccessfulBooking />
           </Route>
@@ -36,12 +41,6 @@ return (
           </Route>
           <Route path="/perfil">
             <Profile />
-          </Route>
-          <Route path="/inicio">
-            <Home />  
-          </Route>
-          <Route path="/">
-            <Login />  
           </Route>
          </Switch>
       </div> 

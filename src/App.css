@@ -1,3 +1,14 @@
 .logoHeader{
   flex-grow: 1;
 }
+
+.bookingDesk{
+  margin-top: 50px;
+}
+
+.titles{
+  border-left: 2px solid #6785C1;
+  padding-left: 8px;
+  margin-left: 20px;
+  color: #8E908F;
+}

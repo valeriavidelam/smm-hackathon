@@ -8,12 +8,12 @@ import {
 import esLocale from 'date-fns/locale/es'
 
 
-const DeskDateSelector = () =>{  
-  const [selectedDate, setSelectedDate] = React.useState(new Date());
+const DeskDateSelector = ({value, handleDateChange}) =>{  
+  //const [selectedDate, setSelectedDate] = React.useState(new Date());
 
-  const handleDateChange = (date) => {
-    setSelectedDate(date);
-  };
+  // const handleDateChange = (date) => {
+  //   return date;
+  // };
 
   return (
     <MuiPickersUtilsProvider utils={DateFnsUtils} locale={esLocale}>
@@ -22,8 +22,9 @@ const DeskDateSelector = () =>{
           id="date-picker-dialog"
           label="Seleccione fecha"
           format="dd/MM/yyyy"
-          value={selectedDate}
+          value={value}
           onChange={handleDateChange}
+          onAccept={handleDateChange}
           KeyboardButtonProps={{
             'aria-label': 'change date',
           }}

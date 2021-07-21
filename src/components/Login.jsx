@@ -2,17 +2,11 @@
 import React from 'react';
 import LogoEG from '../assets/img/LogoEG.png';
 import LogoSmm from '../assets/img/LogoSmm.png';
-<<<<<<< HEAD
-import Button from '@material-ui/core/Button';
-import Link from '@material-ui/core/Link';
-import {Typography} from '@material-ui/core';
-=======
 import Button from '@material-ui/core/Button'
 import Link from '@material-ui/core/Link'
 import Grid from '@material-ui/core/Grid'
 import { Box, ThemeProvider, Typography } from '@material-ui/core';
 import theme from '../themeConfig';
->>>>>>> b4390896df3438d83d9e964d10443ec3da1d51dc
 
 
 const Login = () => {
@@ -42,46 +36,6 @@ const Login = () => {
   }
 
   return (
-<<<<<<< HEAD
-    <div className="Login">
-      <div>
-        <img src={LogoEG} alt="Logo Everis"/>
-      </div>
-      <div>
-        <img src={LogoSmm} alt="Logo To Be"/>
-        <Typography variant="h5" color="secondary" align="center">
-          Iniciar Sesión
-        </Typography>
-      </div>
-      <form onSubmit={saveUser}>
-        <input 
-        type="text" 
-        className="user" 
-        placeholder="Usuario" 
-        onChange={ (e) => setUser(e.target.value) }/>
-        <br /> 
-        <input 
-        type="text" 
-        className="password" 
-        placeholder="Contraseña" 
-        onChange={ (e) => setPass(e.target.value) }/>
-      </form>
-      
-      <Link
-        component="button"
-        variant="body2"
-        onClick={() => {
-          console.info("I'm a button.");
-        }}
-      >       
-        ¿Olvidaste tu contraseña?
-      </Link>
-
-      <Button variant="outlined" color="primary">
-        Ingresar
-      </Button>
-    </div>
-=======
       <ThemeProvider theme={theme}>
         <Grid container>
           <Grid item xs={12}>
@@ -151,7 +105,6 @@ const Login = () => {
           </Grid>
         </Grid>
       </ThemeProvider>
->>>>>>> b4390896df3438d83d9e964d10443ec3da1d51dc
   )
 }
 

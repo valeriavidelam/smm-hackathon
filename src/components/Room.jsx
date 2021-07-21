@@ -16,29 +16,7 @@ const Room = ({sala, setSala}) => {
       <li>{id}</li>
       <li>Disponibilidad: {disponibilidad}</li>
       </ul>
-      
-      
-        {/* <Button color="primary" 
-        variant="outlined"
-        
-        disableElevation
-        onClick={() => {
-            setShow(data.zonasDeTrabajo);
-            }}>ver sala
-        </Button> */}
-
-        
-      
-       
-       {/* {show.map((data) => (
-         <BookingRoom
-           key={data.id}
-           nombre={nombre}
-           id={id}
-            */}
-         {/* />
-       ))} */}
-       </div>
+             </div>
     );
   };
 export default Room;

@@ -5,7 +5,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { IconButton, makeStyles } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
-import logo from '../assets/images/FrameEverisColor.png';
+import logo from '../assets/img/FrameEverisColor.png';
 import Grow from '@material-ui/core/Grow';
 import Paper from '@material-ui/core/Paper';
 import Popper from '@material-ui/core/Popper';
@@ -97,7 +97,7 @@ const Navbar = () => {
               <Paper>
                 <ClickAwayListener onClickAway={handleClose}>
                   <MenuList autoFocusItem={openMenu} id="menu-list-grow" onKeyDown={handleListKeyDown}>
-                    <MenuItem onClick={()=> history.push('reservarescritorio')}>Reservar escritorio</MenuItem>
+                    <MenuItem onClick={()=> history.push('reservaescritorio')}>Reservar escritorio</MenuItem>
                     <MenuItem onClick={()=> history.push('reservarsala')}>Reservar sala</MenuItem>
                     <MenuItem onClick={()=> history.push('buscarcolaborador')}>Buscar colaborador</MenuItem>
                     <MenuItem onClick={handleClose}>Reportar un problema</MenuItem>

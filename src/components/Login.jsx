@@ -2,8 +2,9 @@
 import React from 'react';
 import LogoEG from '../assets/img/LogoEG.png';
 import LogoSmm from '../assets/img/LogoSmm.png';
-import Button from '@material-ui/core/Button'
-import Link from '@material-ui/core/Link'
+import Button from '@material-ui/core/Button';
+import Link from '@material-ui/core/Link';
+import {Typography} from '@material-ui/core';
 
 
 const Login = () => {
@@ -26,13 +27,15 @@ const Login = () => {
   }
 
   return (
-    <div>
+    <div className="Login">
       <div>
-        <img src={LogoEG} alt=""/>
+        <img src={LogoEG} alt="Logo Everis"/>
       </div>
       <div>
-        <img src={LogoSmm} alt=""/>
-        <h2>Iniciar sesión</h2>
+        <img src={LogoSmm} alt="Logo To Be"/>
+        <Typography variant="h5" color="secondary" align="center">
+          Iniciar Sesión
+        </Typography>
       </div>
       <form onSubmit={saveUser}>
         <input 

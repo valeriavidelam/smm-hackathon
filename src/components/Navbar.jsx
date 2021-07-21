@@ -13,6 +13,7 @@ import ClickAwayListener from '@material-ui/core/ClickAwayListener';
 import MenuItem from '@material-ui/core/MenuItem';
 import MenuList from '@material-ui/core/MenuList';
 
+
 const useStyles = makeStyles(theme =>({
   offset: theme.mixins.toolbar,
   menuButton: {
@@ -70,7 +71,7 @@ const Navbar = () => {
           </Typography>
           <div>
             <IconButton 
-              color="primary" 
+              color="primary"
               aria-label="menu" 
               className={classes.menuButton}
               ref={anchorRef}

@@ -8,9 +8,10 @@ import {
   BrowserRouter as Router,
   Switch,
   Route} from 'react-router-dom';
-import BookingDesk from './components/BookingDesk';
 import BookingRoom from './components/BookingRoom';
 import SearchCollaborator from './components/SearchCollaborator';
+import BookingDesk from './components/BookingDesk';
+import SuccessfulBooking from './components/SuccessfulBooking';
 
 
 function App() {
@@ -21,8 +22,11 @@ return (
     <Router>
       <div>
         <Switch>
+          <Route path="/reservaexitosa">
+            <SuccessfulBooking />
+          </Route>
           <Route path="/reservaescritorio">
-            <BookingDesk />
+            <BookingDesk/>
           </Route>
           <Route path="/reservasala">
             <BookingRoom />

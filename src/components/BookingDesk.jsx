@@ -4,7 +4,7 @@ import Navbar from './Navbar';
 import Typography from '@material-ui/core/Typography';
 import DeskDateSelector from './DeskDatePicker';
 import Grid from '@material-ui/core/Grid';
-import oficinas from '../assets/img/Oficinas_Concuadrante.png'
+import oficinas from '../assets/img/Oficinas_negro.png'
 
 const BookingDesk = () => {
   return (

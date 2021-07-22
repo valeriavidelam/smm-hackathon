@@ -1,51 +1,32 @@
-import '../App.css'
-import React, {useState} from 'react';
+import React from 'react';
+import { useState } from 'react';
+import '../App.css';
 import Navbar from './Navbar';
-import Typography from '@material-ui/core/Typography';
-import Grid from '@material-ui/core/Grid';
-import escritorio from '../assets/img/g5.PNG'
-import data from '../data/data.json';
-import Desk from './Desk';
+import Desks from './Desks';
+import { Typography } from '@material-ui/core';
+import { Button } from '@material-ui/core';
 
-const SelectDesk = () => {
-  
-  const [salas, setSala] = useState(data.zonasDeTrabajo);
-  const sala5 = salas.filter((data) => data.id === "G_5");
-  // console.log(salas);
+
+ const SelectDesk = () => {
+   let [selectDesk, setSelectDesk] = useState('');
+   const addBooking =() =>{
+     alert('se ha realizado una reserva');
+   }
   return (
-    <div>
+    <div className='gridMargin'>
       <Navbar />
       <div className='titles'>
-      <h3>Selecciona escritorio</h3></div>
-      <Grid container justifyContent="space-around">
-      <div>
-      <img src={escritorio} alt="escritorio" width="300px" className='desk'/>
-      <h3>Escritorio</h3>
+        <h3>Reservar escritorio</h3>
       </div>
-      {sala5.map((sala) => (
-       
-       <Desk
-         id={sala.id}
-         nombre={sala.nombre}
-         disponibilidad={sala.disponibilidad}
-         escritorio={sala.escritorio}
-         setSala={setSala}
-         /> 
-         ))}
-         
-      
-      
-      <Typography variant="h6" color="secondary" align='center'>
-      Selecciona un escritorio disponible
-      </Typography>
-      </Grid>
-      
-     
-     
-  
-     
-  </div>
+      <div className='gridBooking'>
+        <Desks onclick={(e) => {setSelectDesk(e.name)}}/>
+        <Typography variant="h6" color="secondary" align='center'>Fecha:</Typography>
+        <Typography variant="h6" color="secondary" align='center'>Desde - Hasta</Typography>
+        <Typography variant="h6" color="secondary" align='center'>Seleccionaste escritorio: {selectDesk}</Typography>
+        <br/>
+        {(selectDesk && <Button onClick={addBooking} variant="contained" color="primary">Reservar</Button>)}
+      </div>
+    </div>
   )
 }
-
-export default SelectDesk
+export default SelectDesk; 

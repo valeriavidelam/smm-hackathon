@@ -2,7 +2,7 @@ import React from 'react'
 import oficinasMap from '../assets/img/Oficinas_Negro-para-map.png';
 import ImageMapper from 'react-image-mapper';
 
-const Office = ({office}) => {
+const Office = ({onclick}) => {
   const MAP = {
     name: "my-map",
     areas: [
@@ -101,7 +101,7 @@ const Office = ({office}) => {
       map={MAP} 
       width={350} 
       imgWidth={350}
-      onClick={area => console.log(area.name)}
+      onClick={onclick}
       />
     </div>
   )

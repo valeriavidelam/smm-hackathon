@@ -30,6 +30,18 @@ const style = {
   
 };
 
+const style2 = {
+  borderRadius: 5,
+  border: 2,
+  color: 'lightGreen',
+  width: 210,
+  height: 60,
+  padding: '0 30px',
+  margin: theme.spacing(1),
+  
+  
+};
+
 const SuccessfulBooking = () => {
   return (
     <ThemeProvider theme={theme}>
@@ -67,7 +79,7 @@ const SuccessfulBooking = () => {
       </Button>
       </Grid>
       <Grid item xs={6} spacing={3}>
-      <Button variant="outlined" color="primary" href="/inicio">
+      <Button variant="outlined" color="primary" href="/inicio" >
         Volver al inicio
       </Button>
       </Grid>

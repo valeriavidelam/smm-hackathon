@@ -4,7 +4,6 @@ import { useState } from 'react';
 import Navbar from './Navbar';
 import Typography from '@material-ui/core/Typography';
 import oficinas from '../assets/img/Oficinas_Negro_cuadrantes.png'
-import oficinasDis from '../assets/img/Oficinas_Green.png'
 import DeskTimePicker from './DeskTimePicker';
 import DeskTimePickerEnd from './DeskTimePickerEnd';
 import 'date-fns';
@@ -13,7 +12,9 @@ import {
   MuiPickersUtilsProvider,
   KeyboardDatePicker,
 } from '@material-ui/pickers';
-import esLocale from 'date-fns/locale/es'
+import esLocale from 'date-fns/locale/es';
+import Office from './Offices';
+import Breadcrumbs from './Breadcrumb';
 
 
 const BookingDesk = () => {
@@ -21,9 +22,10 @@ const BookingDesk = () => {
   const [selectedDate, setSelectedDate] = useState(new Date());
   let [selectedFromHour, setSelectedFromHour] = useState();
   let [selectedUntilHour, setSelectedUntilHour] = useState();
-  let [avalaibleOffice, setAvalaibleOffice] = useState(oficinas);
+  let [avalaibleOffice, setAvalaibleOffice] = useState(false);
   let [message, setMessage] = useState('Señale fecha y hora para ver espacios disponibles');
   let [floor, setFloor] =useState('');
+  let [office, setOffice] = useState('');
   
   const handleDateChange = (date) => {
     setSelectedDate(date);
@@ -34,13 +36,14 @@ const BookingDesk = () => {
     console.log(selectedFromHour);
     console.log(selectedUntilHour);
     setFloor('Piso 3 - Alameda')
-    setAvalaibleOffice(oficinasDis);
+    setAvalaibleOffice(true);
     setMessage('Selecciona la zona de trabajo que quieres reservar');
   }
 
   return (
     <div className='gridMargin'>
       <Navbar />
+      <Breadcrumbs />
       <div className='titles'>
       <h3>Reservar escritorio</h3>
       </div>
@@ -70,8 +73,11 @@ const BookingDesk = () => {
           </div>
         <button onClick={addDate}>Confirmar</button>
         <Typography variant="h6" color="secondary" align='center'>{floor}</Typography>
-        <img src={avalaibleOffice} alt="plano" width="350px"/>
+        { avalaibleOffice ? <Office /> : <img src={oficinas} alt="plano" width="350px"/>}
+        {/* { datenotselected && <img src={oficinas} alt="plano" width="350px"/>}
+        { dateselected && <Office />} */}
         <Typography variant="h6" color="secondary" align='center'>{message}</Typography>
+        <Typography variant="h6" color="secondary" align='center'>{office}</Typography>
       </div>
     </div>
   )

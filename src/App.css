@@ -23,6 +23,7 @@
   color: #8E908F;
 }
 
+
 .button-container{
   display:grid;
   grid-template-rows:300px;
@@ -44,3 +45,11 @@
     "main main . sidebar"
     "footer footer footer footer";
   }
+
+.divAlert{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #c6190e;
+}
+

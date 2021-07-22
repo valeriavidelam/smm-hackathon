@@ -111,6 +111,7 @@ const Login = (props) => {
     }, [email, pass, props.history])
 
   return (
+
       <ThemeProvider theme={theme}>
         <Grid container>
           <Grid item xs={12}>
@@ -136,9 +137,11 @@ const Login = (props) => {
             item xs={12}>
               <form onSubmit={processData}>
                 {
+
                   error && (
                     <div className="divAlert">{error}</div>
                   )
+
                 }
               <Box 
               textAlign="center">
@@ -156,11 +159,10 @@ const Login = (props) => {
                 type="password"
                 className="password"
                 placeholder="Contraseña"
-                onChange={e => setPass(e.target.value)}
-                value={pass}                
-              />
-            </Box>
-        
+                onChange={e => setPass(e.target.value)}                            
+                value={pass}
+                />
+                </Box>
               <Box textAlign="center">
             <Link
               component="button"
@@ -199,7 +201,7 @@ const Login = (props) => {
             </form>
           </Grid>
         </Grid>
-      </ThemeProvider>
+    </ThemeProvider>
   )
 }
 

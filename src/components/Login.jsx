@@ -36,75 +36,83 @@ const Login = () => {
   }
 
   return (
-      <ThemeProvider theme={theme}>
-        <Grid container>
-          <Grid item xs={12}>
-          <Box textAlign="start">
+    <ThemeProvider theme={theme}>
+      <Grid
+        container
+        direction="column"
+        justifyContent="flex-start"
+        alignItems="flex-start"
+      >
+        <Grid item xs={12}>
+          <Box>
             <img src={LogoEG} alt="" />
-            <br />
-            </Box>
-          </Grid>
+          </Box>
+        </Grid>
+        <Grid
+          container
+          direction="column"
+          justifyContent="center"
+          alignItems="center"
+          spacing={2}>
           <Grid item xs={12}>
             <Box textAlign="center">
-            <img src={LogoSmm} alt="" />
-            <br />
-            <br />
-            <Typography variant="h5" color="secondary">
-              Iniciar sesión
-            </Typography>
-            <br />
+              <img src={LogoSmm} alt="" />
+              <Typography variant="h5" color="secondary">
+                Iniciar sesión
+              </Typography>
             </Box>
           </Grid>
           <Grid
             item xs={12}>
-              <Box textAlign="center">
-            <form onSubmit={saveUser}>
-              <input
-                type="email"
-                className="user"
-                placeholder="Usuario"
-                onChange={(e) => setUser(e.target.value)}
-                value={user}
-              />
-              <br />
-              <input
-                type="password"
-                className="password"
-                placeholder="Contraseña"
-                onChange={(e) => setPass(e.target.value)}
-                value={pass}
-              />
-            </form>
+            <Box textAlign="center">
+              <form onSubmit={saveUser}>
+                <input
+                  type="email"
+                  className="user"
+                  placeholder="Usuario"
+                  onChange={(e) => setUser(e.target.value)}
+                  value={user}
+                />
+                <br />
+                <input
+                  type="password"
+                  className="password"
+                  placeholder="Contraseña"
+                  onChange={(e) => setPass(e.target.value)}
+                  value={pass}
+                />
+              </form>
             </Box>
           </Grid>
           <Grid
             item xs={12}>
-              <Box textAlign="center">
-            <Link
-              component="button"
-              variant="body2"
-              onClick={() => {
-                console.info("I'm a button.");
-              }}
-            >
-              ¿Olvidaste tu contraseña?
-            </Link>
+            <Box textAlign="center">
+              <Link
+                component="button"
+                variant="body2"
+                onClick={() => {
+                  console.info("I'm a button.");
+                }}
+              >
+                ¿Olvidaste tu contraseña?
+              </Link>
             </Box>
           </Grid>
           <Grid
             item xs={12}>
-              <Box textAlign="center">
-              <br />
-            <Button
-              variant="outlined"
-              color="primary"
-              type="submit">
-              Ingresar
-            </Button>
+            <Box textAlign="center">
+              <Button
+                variant="outlined"
+                color="primary"
+                type="submit"
+              >
+                Ingresar
+              </Button>
             </Box>
           </Grid>
         </Grid>
-      </ThemeProvider>
+      </Grid>
+    </ThemeProvider>
   )
 }
 

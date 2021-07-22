@@ -9,6 +9,18 @@ import { useHistory } from "react-router-dom";
 import {db} from '../firebase.js';
 
 
+const style = {
+  background: 'linear-gradient(50deg, #8bc34a 30%, #8bc34a 90%)',
+  borderRadius: 30,
+  border: 2,
+  color: 'white',
+  width: 210,
+  height: 50,
+  padding: '0 30px',
+  boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
+
+};
+
 const SelectDesk = () => {
   let [selectDesk, setSelectDesk] = useState('');
   let history = useHistory();
@@ -52,7 +64,7 @@ const SelectDesk = () => {
           <Typography variant="h6" color="secondary" align='center'>09:00 - 12:45</Typography>
           <Typography variant="h6" color="secondary" align='center'>Seleccionaste escritorio: {selectDesk}</Typography>
           <br />
-          {(selectDesk && <Button onClick={addBooking} variant="contained" color="primary">Reservar</Button>)}
+          {(selectDesk && <Button style={style} onClick={addBooking} variant="contained" color="primary">Reservar</Button>)}
         </div>
       </div>
     )

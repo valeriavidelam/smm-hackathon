@@ -4,13 +4,12 @@ import Navbar from './Navbar';
 
 const SearchCollaborator = () => {
   return (
-    <div>
+    <div className='gridMargin'>
       <Navbar />
-      <br />
-      <br />
-      <br />
       <Breadcrumbs />
-      <h2>Search Collaborator</h2>
+      <div className='titles'>
+      <h3>Buscar Colaborador</h3>
+      </div>
     </div>
   )
 }

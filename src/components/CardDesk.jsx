@@ -32,7 +32,10 @@ import DeleteBtn from '../assets/img/Delete.png'
                             Zona de trabajo
                         </Typography>
                         <Typography className={classes.pos} color="Secondary">
-                            Escritorio
+                            Sala G_5 Escritorio 10
+                        </Typography>
+                        <Typography className={classes.pos} color="Secondary">
+                            30 de Julio 09:00 - 12:45hrs
                         </Typography>
                     </CardContent>
                     <CardActions>

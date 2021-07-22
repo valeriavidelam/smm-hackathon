@@ -13,11 +13,11 @@ import {
   KeyboardDatePicker,
 } from '@material-ui/pickers';
 import esLocale from 'date-fns/locale/es';
-import Office from './Offices';
+import Room from './Room';
 import { useHistory } from "react-router-dom";
 
 
-const BookingDesk = () => {
+const BookingRoom = () => {
 
   const [selectedDate, setSelectedDate] = useState(new Date());
   let [selectedFromHour, setSelectedFromHour] = useState();
@@ -82,4 +82,4 @@ const BookingDesk = () => {
   )
 }
 
-export default BookingDesk
+export default BookingRoom

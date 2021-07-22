@@ -10,6 +10,7 @@ import theme from '../themeConfig';
 import {auth, db} from '../firebase';
 import {withRouter} from 'react-router-dom';
 
+
 const style = {
   background: 'linear-gradient(50deg, #81c784 20%, #8bc34a 90%)',
   borderRadius: 9,
@@ -23,34 +24,35 @@ const style = {
   
 };
 
+
 const Login = (props) => {
 
   const [email, setEmail] = React.useState('')
   const [pass, setPass] = React.useState('')
-  //const [error, setError] = React.useState(null)
+  const [error, setError] = React.useState(null)
   const [isRegister, setIsRegister] = React.useState(true)
 
   const processData = e => {
     e.preventDefault()
         if(!email.trim()){
-        console.log('Ingrese Email')
-        //setError('Ingrese Email')
+        //console.log('Ingrese Email')
+        setError('Ingrese Email')
         return
     }
     e.preventDefault()
         if(!pass.trim()){
-        console.log('Ingrese Contraseña')
-        //setError('Ingrese Contraseña')
+        //console.log('Ingrese Contraseña')
+        setError('Ingrese Contraseña')
         return
     }
     if(pass.length < 6){
-        console.log('La constraseña debe ser mayor a 6 carácteres')
-        //setError('La constraseña debe ser mayor a 6 carácteres')
+        //console.log('La constraseña debe ser mayor a 6 carácteres')
+        setError('La constraseña debe ser mayor a 6 carácteres')
         return
 
     }
     console.log('Procesando datos')
-    //setError(null)
+    setError(null)
 
     if(isRegister){
       register()
@@ -65,17 +67,17 @@ const Login = (props) => {
         console.log(res.user)
         setEmail('')
         setPass('')
-        //setError(null)
+        setError(null)
         props.history.push('/inicio')
     } catch (error) {
       console.log(error)
       if(error.code === 'auth/invalid-email'){
         console.log('Email no válido')
-        //setError('Email no válido')
+        setError('Email no válido')
       }
       if(error.code === 'auth/user-not-found'){
         console.log('Email no registrado')
-        //setError('Email no registrado')
+        setError('Email no registrado')
       }
     }
   }, [email, pass, props.history])
@@ -91,7 +93,7 @@ const Login = (props) => {
       })
       setEmail('')
       setPass('')
-      //setError(null)
+      setError(null)
       props.history.push('/inicio')
 
       } catch (error) {
@@ -102,7 +104,7 @@ const Login = (props) => {
       }
         if(error.code === 'auth/email-already-in-use'){
           console.log('Este email ya está en uso')
-          // setError('Este email ya está en uso')
+          setError('Este email ya está en uso')
         }
       }  
     }, [email, pass, props.history])
@@ -133,7 +135,9 @@ const Login = (props) => {
             item xs={12}>
               <form onSubmit={processData}>
                 {
-                  error && ()
+                  error && (
+                    <div className="divAlert">{error}</div>
+                  )
                 }
               <Box 
               textAlign="center">

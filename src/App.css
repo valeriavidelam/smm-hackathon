@@ -22,3 +22,10 @@
   margin-left: 20px;
   color: #8E908F;
 }
+
+.divAlert{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #c6190e;
+}

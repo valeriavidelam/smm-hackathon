@@ -73,7 +73,7 @@ const BookingDesk = () => {
           </div>
         <button onClick={addDate}>Confirmar</button>
         <Typography variant="h6" color="secondary" align='center'>{floor}</Typography>
-        { avalaibleOffice ? <Office onclick={(e) => {setOffice(e.name); history.push("/seleccionarescritorio")}}/> 
+        { avalaibleOffice ? <Office onclick={(e) => {setOffice(e.name); console.log(e.name); history.push("/seleccionarescritorio")}}/> 
         : <img src={oficinas} alt="plano" width="350px"/>}
         <Typography variant="h6" color="secondary" align='center'>{message}</Typography>
         <Typography variant="h6" color="secondary" align='center'>{office}</Typography>

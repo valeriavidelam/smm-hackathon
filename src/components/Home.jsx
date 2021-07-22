@@ -12,7 +12,7 @@ import EventAvailableIcon from '@material-ui/icons/EventAvailable';
 
 
 const style = {
-  background: 'linear-gradient(50deg, #0288d1 30%, #8bc34a 90%)',
+  background: 'linear-gradient(50deg, #8bc34a 30%, #8bc34a 90%)',
   borderRadius: 30,
   border: 2,
   color: 'white',
@@ -90,6 +90,57 @@ const Home = () => {
             </Button>
           </Grid>
         </Grid>
+
+      <Grid 
+      container
+      direction="column"
+      justifyContent="center"
+      alignItems="center"
+      spacing={3}
+      >
+      <Grid item xl={12} sm={6} xs={6} spacing={3}>
+    
+        <Button style={style} href="/reservaescritorio">
+           <ImportantDevicesTwoToneIcon />
+           <Typography variant="body2" color="white" align="center">
+              RESERVAR ESCRITORIO
+            </Typography>
+       
+      </Button>
+   
+      </Grid>
+     
+
+      <Grid item xs={6} spacing={3}>
+      <Button style={style} href="/reservasala">
+        <PeopleIcon />
+        <Typography variant="body2" color="white" align="center">
+          AGENDAR REUNIÓN
+        </Typography>
+      </Button>
+      </Grid>
+    
+    
+      <Grid item xs={6} spacing={3}>
+      <Button style={style} href="/buscarcolaborador">
+        <SearchIcon />
+        <Typography variant="body2" color="white" align="center">
+          BUSCAR COLABORADOR
+        </Typography>
+      </Button>
+      </Grid>
+      
+
+      <Grid  item xs={6} spacing={3}>
+      <Button style={style} href="/misreservas">
+        <EventAvailableIcon />
+        <Typography variant="body2" color="white" align="center">
+          MIS RESERVAS
+        </Typography>
+      </Button> 
+      </Grid>
+      </Grid>
+
       </Grid>
 
     </ThemeProvider>

@@ -199,7 +199,6 @@ const Login = (props) => {
             </form>
           </Grid>
         </Grid>
-      </Grid>
     </ThemeProvider>
   )
 }

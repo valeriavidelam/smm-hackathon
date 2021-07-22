@@ -1,10 +1,11 @@
 import React from 'react'
-import { DeleteIcon, Typography } from "@material-ui/core";
+import { Typography } from "@material-ui/core";
 import {Card, CardContent, CardActions } from '@material-ui/core'
 import { makeStyles } from "@material-ui/core/styles";
-import { IconButton } from "@material-ui/core";
-
-//const Buttons = () => {
+import EditBtn from '../assets/img/Edit.png'
+import DeleteBtn from '../assets/img/Delete.png'
+import AddBtn from '../assets/img/Addicon.png'
+import SimpleList from './List'
 
      const useStyles = makeStyles({
         root: {
@@ -23,27 +24,31 @@ import { IconButton } from "@material-ui/core";
         }
     });
 
-     const OutlinedCard = () => {
+     const OutlinedCardT = () => {
         const classes = useStyles();
         return (
             <div>
                 <Card className={classes.root} variant="outlined">
                     <CardContent>
-                        <Typography variant="h5" component="h2">
-                            Zona de trabajo
+                        <Typography variant="h5" component="h2" color="Secondary">
+                            Sala reuniones
                         </Typography>
                         <Typography className={classes.pos} color="Secondary">
-                            Escritorio
+                            Sala
                         </Typography>
+                        <Typography className={classes.pos} color="Secondary">
+                            Asunto:
+                        </Typography>
+                        <SimpleList />
                     </CardContent>
                     <CardActions>
-                        <IconButton aria-label="delete">
-                            <DeleteIcon />
-                        </IconButton>
+                         <img src={AddBtn} alt="" onClick/>
+                         <img src={EditBtn} alt="" onClick/>
+                         <img src={DeleteBtn} alt="" onClick/>
                     </CardActions>
                 </Card>
             </div>
         )
     };
 
-    export default OutlinedCard
+    export default OutlinedCardT

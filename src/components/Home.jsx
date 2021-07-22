@@ -8,6 +8,7 @@ import ImportantDevicesTwoToneIcon from '@material-ui/icons/ImportantDevicesTwoT
 import PeopleIcon from '@material-ui/icons/People';
 import SearchIcon from '@material-ui/icons/Search';
 import EventAvailableIcon from '@material-ui/icons/EventAvailable';
+import Breadcrumbs from './Breadcrumb';
 
 
 
@@ -29,6 +30,7 @@ const Home = () => {
   return (
     <ThemeProvider theme={theme}>
       <Navbar />
+      <Breadcrumbs />
       <Grid container>
         <Grid item xs={12}>
           <Box

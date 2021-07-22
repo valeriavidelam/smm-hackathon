@@ -14,11 +14,8 @@ import {
 } from '@material-ui/pickers';
 import esLocale from 'date-fns/locale/es';
 import Office from './Offices';
-<<<<<<< HEAD
 import Breadcrumbs from './Breadcrumb';
-=======
 import { useHistory } from "react-router-dom";
->>>>>>> 82e5c750efb951489fd575a6de01b9e9f5241782
 
 
 const BookingDesk = () => {

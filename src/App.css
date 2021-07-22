@@ -17,6 +17,10 @@
   align-items: center;
 }
 
+.breadCrumb{
+  margin-left: 10px;
+}
+
 .hourDesk{
   display: flex;
 }

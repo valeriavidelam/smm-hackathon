@@ -15,6 +15,7 @@ import {
 import esLocale from 'date-fns/locale/es';
 import Office from './Offices';
 import { useHistory } from "react-router-dom";
+import Breadcrumbs from './Breadcrumb';
 
 
 const BookingDesk = () => {
@@ -35,15 +36,20 @@ const BookingDesk = () => {
     console.log(selectedDate);
     console.log(selectedFromHour);
     console.log(selectedUntilHour);
-    setFloor('Piso 3 - Alameda')
-    setAvalaibleOffice(true);
-    setMessage('Selecciona la zona de trabajo que quieres reservar');
+    if (selectedFromHour < selectedUntilHour){
+      setFloor('Piso 3 - Alameda')
+      setAvalaibleOffice(true);
+      setMessage('Selecciona la zona de trabajo que quieres reservar');
+    } else {
+      alert('Por favor revisar las horas seleccionadas')
+    }
   }
   let history= useHistory();
 
   return (
     <div className='gridMargin'>
       <Navbar />
+      <Breadcrumbs />
       <div className='titles'>
       <h3>Reservar escritorio</h3>
       </div>
@@ -75,8 +81,8 @@ const BookingDesk = () => {
         <Typography variant="h6" color="secondary" align='center'>{floor}</Typography>
         { avalaibleOffice ? <Office onclick={(e) => {setOffice(e.name); 
           console.log(office); 
+          setTimeout(function(){ history.push("/seleccionarescritorio"); }, 800);
           //localStorage.setItem('hola');
-          history.push("/seleccionarescritorio");
           }}/> 
         : <img src={oficinas} alt="plano" width="350px"/>}
         <Typography variant="h6" color="secondary" align='center'>{message}</Typography>

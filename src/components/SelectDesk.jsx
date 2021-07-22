@@ -12,17 +12,17 @@ import {db} from '../firebase.js';
 const SelectDesk = () => {
   let [selectDesk, setSelectDesk] = useState('');
   let history = useHistory();
-  const myData = localStorage.getItem('hola');
+  //const myData = localStorage.getItem('hola');
 
   const addBooking = () => {
     alert('se ejecutará la reserva');
     history.push('/reservaexitosa');
     if (selectDesk !== '') {
       const newBooking = {
-        user: 'usuario',
-        date: 'su fecha',
-        from: 'desde',
-        to: 'hasta',
+        user: 'María José',
+        date: '30 de Julio',
+        from: '09:00',
+        to: '12:45',
         zona: 'G_5',
         desk: selectDesk,
       }
@@ -48,8 +48,8 @@ const SelectDesk = () => {
         </div>
         <div className='gridBooking'>
           <Desks onclick={(e) => { setSelectDesk(e.name) }} />
-          <Typography variant="h6" color="secondary" align='center'>Fecha:</Typography>
-          <Typography variant="h6" color="secondary" align='center'>Desde - Hasta</Typography>
+          <Typography variant="h6" color="secondary" align='center'>30 de Julio</Typography>
+          <Typography variant="h6" color="secondary" align='center'>09:00 - 12:45</Typography>
           <Typography variant="h6" color="secondary" align='center'>Seleccionaste escritorio: {selectDesk}</Typography>
           <br />
           {(selectDesk && <Button onClick={addBooking} variant="contained" color="primary">Reservar</Button>)}

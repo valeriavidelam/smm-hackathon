@@ -159,11 +159,10 @@ const Login = (props) => {
                 type="password"
                 className="password"
                 placeholder="Contraseña"
-                onChange={e => setPass(e.target.value)}
-                value={pass}                               
-              />
-            </Box>
-        
+                onChange={e => setPass(e.target.value)}                            
+                value={pass}
+                />
+                </Box>
               <Box textAlign="center">
             <Link
               component="button"

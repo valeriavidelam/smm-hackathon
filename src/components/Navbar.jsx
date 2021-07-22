@@ -73,7 +73,7 @@ const Navbar = () => {
       <AppBar className={classes.customBar} >
         <Toolbar>
             <div className='logoHeader'>
-              <a href ="/"><img src={logo} alt="logo" width="83px"></img></a>
+              <a href ="/inicio"><img src={logo} alt="logo" width="83px"></img></a>
             </div> 
           <Typography variant="h6" color="secondary">
             Hola, María José

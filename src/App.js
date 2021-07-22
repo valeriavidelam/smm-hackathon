@@ -12,6 +12,7 @@ import BookingRoom from './components/BookingRoom';
 import SearchCollaborator from './components/SearchCollaborator';
 import BookingDesk from './components/BookingDesk';
 import SuccessfulBooking from './components/SuccessfulBooking';
+import SelectDesk from './components/SelectDesk';
 
 function App() {
 
@@ -32,6 +33,9 @@ return (
           </Route>
           <Route path="/reservaescritorio">
             <BookingDesk/>
+          </Route>
+          <Route path="/seleccionarescritorio">
+            <SelectDesk/>
           </Route>
           <Route path="/reservasala">
             <BookingRoom />

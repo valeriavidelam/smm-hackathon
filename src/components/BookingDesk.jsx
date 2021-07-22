@@ -14,6 +14,7 @@ import {
 } from '@material-ui/pickers';
 import esLocale from 'date-fns/locale/es';
 import Office from './Offices';
+import Breadcrumbs from './Breadcrumb';
 
 
 const BookingDesk = () => {
@@ -42,6 +43,7 @@ const BookingDesk = () => {
   return (
     <div className='gridMargin'>
       <Navbar />
+      <Breadcrumbs />
       <div className='titles'>
       <h3>Reservar escritorio</h3>
       </div>

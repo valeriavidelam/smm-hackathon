@@ -1,14 +1,25 @@
-import React from 'react'
-import Breadcrumbs from '@material-ui/core/Breadcrumbs';
-import Typography from '@material-ui/core/Typography';
-import Link from '@material-ui/core/Link';
+import React from 'react';
+import { 
+    Breadcrumbs as MUIBreadcrumbs,
+    Link 
+}from '@material-ui/core';
+import { withRouter } from 'react-router-dom';
 
-const Breadcrumb = () => {
+const Breadcrumbs = props => {
+    const { 
+        history, 
+        location : { pathname}
+    } = props;
+    const pathnames = pathname.split('/').filter(x => x);
+
     return (
-        <div>
-            
-        </div>
-    )
+        <MUIBreadcrumbs aria-label="breadcrumb">
+            <Link onClick={() => history.push("/inicio")} >Inicio</Link>
+            {pathnames.map((name, index) => {
+                return <Link onClick={() => history.push("/")} >{name}</Link>;
+            })}
+        </MUIBreadcrumbs>
+    );
 }
 
-export default Breadcrumb
+export default withRouter(Breadcrumbs)

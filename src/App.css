@@ -2,6 +2,11 @@
   flex-grow: 1;
 }
 
+.mainLogo{
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
 .gridMargin{
   margin-top: 50px;
 }

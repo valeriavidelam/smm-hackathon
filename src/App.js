@@ -14,7 +14,11 @@ import BookingDesk from './components/BookingDesk';
 import SelectDesk from './components/SelectDesk';
 import Desk from './components/Desk';
 import SuccessfulBooking from './components/SuccessfulBooking';
+<<<<<<< HEAD
 import MyBookings from './components/MyBookings';
+=======
+import SelectDesk from './components/SelectDesk';
+>>>>>>> 82e5c750efb951489fd575a6de01b9e9f5241782
 
 function App() {
 
@@ -39,9 +43,12 @@ return (
           <Route path="/seleccionarescritorio">
             <SelectDesk/>
           </Route>
+<<<<<<< HEAD
           <Route path="/escritorio">
             <Desk/>
           </Route>
+=======
+>>>>>>> 82e5c750efb951489fd575a6de01b9e9f5241782
           <Route path="/reservasala">
             <BookingRoom />
           </Route>

@@ -15,6 +15,7 @@ import {
 import esLocale from 'date-fns/locale/es';
 import Office from './Offices';
 import Breadcrumbs from './Breadcrumb';
+import { useHistory } from "react-router-dom";
 
 
 const BookingDesk = () => {
@@ -39,6 +40,7 @@ const BookingDesk = () => {
     setAvalaibleOffice(true);
     setMessage('Selecciona la zona de trabajo que quieres reservar');
   }
+  let history= useHistory();
 
   return (
     <div className='gridMargin'>
@@ -73,9 +75,8 @@ const BookingDesk = () => {
           </div>
         <button onClick={addDate}>Confirmar</button>
         <Typography variant="h6" color="secondary" align='center'>{floor}</Typography>
-        { avalaibleOffice ? <Office /> : <img src={oficinas} alt="plano" width="350px"/>}
-        {/* { datenotselected && <img src={oficinas} alt="plano" width="350px"/>}
-        { dateselected && <Office />} */}
+        { avalaibleOffice ? <Office onclick={(e) => {setOffice(e.name); history.push("/seleccionarescritorio")}}/> 
+        : <img src={oficinas} alt="plano" width="350px"/>}
         <Typography variant="h6" color="secondary" align='center'>{message}</Typography>
         <Typography variant="h6" color="secondary" align='center'>{office}</Typography>
       </div>

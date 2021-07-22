@@ -1,4 +1,5 @@
 //import PagesSharp from '@material-ui/icons';
+import '../App.css'
 import React from 'react';
 import LogoEG from '../assets/img/LogoEG.png';
 import LogoSmm from '../assets/img/LogoSmm.png';
@@ -114,10 +115,10 @@ const Login = (props) => {
       <ThemeProvider theme={theme}>
         <Grid container>
           <Grid item xs={12}>
-          <Box textAlign="start">
+          <div className='mainLogo'>
             <img src={LogoEG} alt="LogoEveris" />
             <br />
-            </Box>
+            </div>
           </Grid>
           <Grid item xs={12}>
             <Box textAlign="center">
@@ -153,7 +154,7 @@ const Login = (props) => {
                 value={email}  
               />
               <br />
-              <br />
+              <br/>
               <input
                 type="password"
                 className="password"

@@ -12,6 +12,7 @@ import BookingRoom from './components/BookingRoom';
 import SearchCollaborator from './components/SearchCollaborator';
 import BookingDesk from './components/BookingDesk';
 import SuccessfulBooking from './components/SuccessfulBooking';
+import MyBookings from './components/MyBookings';
 
 function App() {
 
@@ -41,6 +42,9 @@ return (
           </Route>
           <Route path="/perfil">
             <Profile />
+          </Route>
+          <Route path="/misreservas">
+            <MyBookings />  
           </Route>
          </Switch>
       </div> 

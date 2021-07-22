@@ -110,6 +110,7 @@ const Login = (props) => {
     }, [email, pass, props.history])
 
   return (
+
       <ThemeProvider theme={theme}>
         <Grid container>
           <Grid item xs={12}>
@@ -156,9 +157,7 @@ const Login = (props) => {
                 className="password"
                 placeholder="Contraseña"
                 onChange={e => setPass(e.target.value)}
-                value={pass}
-                
-                
+                value={pass}                               
               />
             </Box>
         
@@ -200,7 +199,8 @@ const Login = (props) => {
             </form>
           </Grid>
         </Grid>
-      </ThemeProvider>
+      </Grid>
+    </ThemeProvider>
   )
 }
 

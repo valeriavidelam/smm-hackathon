@@ -12,12 +12,14 @@ import {db} from '../firebase.js';
 const SelectDesk = () => {
   let [selectDesk, setSelectDesk] = useState('');
   let history = useHistory();
+  const myData = localStorage.getItem('hola');
+
   const addBooking = () => {
     alert('se ejecutará la reserva');
     history.push('/reservaexitosa');
     if (selectDesk !== '') {
       const newBooking = {
-        user: 'Usuario',
+        user: 'usuario',
         date: 'su fecha',
         from: 'desde',
         to: 'hasta',
@@ -37,6 +39,7 @@ const SelectDesk = () => {
       alert ('Faltan datos para la reserva');
     };
   };
+
     return (
       <div className='gridMargin'>
         <Navbar />

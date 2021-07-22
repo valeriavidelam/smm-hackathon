@@ -73,7 +73,7 @@ const Navbar = () => {
       <AppBar className={classes.customBar} >
         <Toolbar>
             <div className='logoHeader'>
-              <a href ="/"><img src={logo} alt="logo" width="83px"></img></a>
+              <a href ="/inicio"><img src={logo} alt="logo" width="83px"></img></a>
             </div> 
           <Typography variant="h6" color="secondary">
             Hola, María José
@@ -99,7 +99,7 @@ const Navbar = () => {
                 <ClickAwayListener onClickAway={handleClose}>
                   <MenuList autoFocusItem={openMenu} id="menu-list-grow" onKeyDown={handleListKeyDown}>
                     <MenuItem onClick={()=> history.push('reservaescritorio')}>Reservar escritorio</MenuItem>
-                    <MenuItem onClick={()=> history.push('reservarsala')}>Reservar sala</MenuItem>
+                    <MenuItem onClick={()=> history.push('reservasala')}>Reservar sala</MenuItem>
                     <MenuItem onClick={()=> history.push('buscarcolaborador')}>Buscar colaborador</MenuItem>
                     <MenuItem onClick={handleClose}>Reportar un problema</MenuItem>
                     <MenuItem onClick={handleClose}>Mis reservas</MenuItem>

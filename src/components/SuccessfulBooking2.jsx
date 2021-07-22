@@ -65,9 +65,9 @@ const SuccessfulBooking = () => {
     </Typography>
     <br></br>
     <Typography variant="h6" align="center">
-      Zona de trabajo G_5
+      Sala E - Tokio 
     </Typography>
-    <Typography variant="body1" align="center">
+     <Typography variant="body1" align="center">
       23 de Julio <br></br>
       10:00 - 12:45 hrs.
     </Typography>

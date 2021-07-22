@@ -45,7 +45,7 @@ const BookingRoom = () => {
     <div className='gridMargin'>
       <Navbar />
       <div className='titles'>
-      <h3>Reservar escritorio</h3>
+      <h3>Reservar sala de reuniones </h3>
       </div>
       <div className='gridBooking'>
         <MuiPickersUtilsProvider utils={DateFnsUtils} locale={esLocale}>
@@ -73,7 +73,7 @@ const BookingRoom = () => {
           </div>
         <button onClick={addDate}>Confirmar</button>
         <Typography variant="h6" color="secondary" align='center'>{floor}</Typography>
-        { avalaibleOffice ? <Office onclick={(e) => {setOffice(e.name); history.push("/seleccionarescritorio")}}/> 
+        { avalaibleOffice ? <Room onclick={(e) => {setOffice(e.name); history.push("/seleccionarsala")}}/> 
         : <img src={oficinas} alt="plano" width="350px"/>}
         <Typography variant="h6" color="secondary" align='center'>{message}</Typography>
         <Typography variant="h6" color="secondary" align='center'>{office}</Typography>
@@ -82,4 +82,6 @@ const BookingRoom = () => {
   )
 }
 
+
 export default BookingRoom
+

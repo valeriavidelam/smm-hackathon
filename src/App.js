@@ -15,6 +15,8 @@ import BookingDesk from './components/BookingDesk';
 import SelectDesk from './components/SelectDesk';
 import Desk from './components/Desk';
 import SuccessfulBooking from './components/SuccessfulBooking';
+import MyBookings from './components/MyBookings';
+import SuccessfulBooking2 from './components/SuccessfulBooking2';
 
 function App() {
 
@@ -32,6 +34,9 @@ return (
           </Route>
           <Route path="/reservaexitosa">
             <SuccessfulBooking />
+          </Route>
+          <Route path="/reservaexitosareu">
+            <SuccessfulBooking2 />
           </Route>
           <Route path="/reservaescritorio">
             <BookingDesk/>
@@ -53,6 +58,9 @@ return (
           </Route>
           <Route path="/perfil">
             <Profile />
+          </Route>
+          <Route path="/misreservas">
+            <MyBookings />  
           </Route>
          </Switch>
       </div> 

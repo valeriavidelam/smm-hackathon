@@ -9,6 +9,7 @@ import {
   Switch,
   Route} from 'react-router-dom';
 import BookingRoom from './components/BookingRoom';
+import SelectRoom from './components/SelectRoom';
 import SearchCollaborator from './components/SearchCollaborator';
 import BookingDesk from './components/BookingDesk';
 import SelectDesk from './components/SelectDesk';
@@ -43,6 +44,9 @@ return (
           </Route>
           <Route path="/reservasala">
             <BookingRoom />
+          </Route>
+          <Route path="/seleccionarsala">
+            <SelectRoom />
           </Route>
           <Route path="/buscarcolaborador">
             <SearchCollaborator />

@@ -1,5 +1,5 @@
 import React from 'react'
-// import oficinasMap from '../assets/img/Oficinas_Negro-para-map.png';
+import oficinasMap from '../assets/img/Oficinas_Negro-para-map.png';
 import ImageMapper from 'react-image-mapper';
 
 const Office = ({onclick}) => {

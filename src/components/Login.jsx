@@ -136,9 +136,11 @@ const Login = (props) => {
             item xs={12}>
               <form onSubmit={processData}>
                 {
+
                   error && (
                     <div className="divAlert">{error}</div>
                   )
+
                 }
               <Box 
               textAlign="center">

@@ -11,6 +11,6 @@ const BookingRoom = () => {
   )
 }
 
-export default BookingRoom
 
+export default BookingRoom
 

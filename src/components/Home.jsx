@@ -12,7 +12,7 @@ import EventAvailableIcon from '@material-ui/icons/EventAvailable';
 
 
 const style = {
-  background: 'linear-gradient(50deg, #0288d1 30%, #8bc34a 90%)',
+  background: 'linear-gradient(50deg, #8bc34a 30%, #8bc34a 90%)',
   borderRadius: 30,
   border: 2,
   color: 'white',
@@ -55,7 +55,7 @@ const Home = () => {
         <Button style={style} href="/reservaescritorio">
            <ImportantDevicesTwoToneIcon />
            <Typography variant="body2" color="white" align="center">
-              ¿Qué quieres hacer?
+              RESERVAR ESCRITORIO
             </Typography>
        
       </Button>
@@ -66,7 +66,9 @@ const Home = () => {
       <Grid item xs={6} spacing={3}>
       <Button style={style} href="/reservasala">
         <PeopleIcon />
-       AGENDAR REUNIÓN
+        <Typography variant="body2" color="white" align="center">
+          AGENDAR REUNIÓN
+        </Typography>
       </Button>
       </Grid>
     
@@ -74,15 +76,19 @@ const Home = () => {
       <Grid item xs={6} spacing={3}>
       <Button style={style} href="/buscarcolaborador">
         <SearchIcon />
-       BUSCAR COLABORADOR
+        <Typography variant="body2" color="white" align="center">
+          BUSCAR COLABORADOR
+        </Typography>
       </Button>
       </Grid>
       
 
       <Grid  item xs={6} spacing={3}>
-      <Button style={style}>
+      <Button style={style} href="/misreservas">
         <EventAvailableIcon />
-       MIS RESERVAS
+        <Typography variant="body2" color="white" align="center">
+          MIS RESERVAS
+        </Typography>
       </Button> 
       </Grid>
       </Grid>

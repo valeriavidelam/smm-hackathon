@@ -1,0 +1,172 @@
+  {
+    "zonasDeTrabajo": [
+      {
+        "id": "G_1",
+        "nombre": "G_1",
+        "disponibilidad": 12,
+        "escritorio": []
+      },
+      {
+        "id": "G_2",
+        "nombre": "G_2",
+        "disponibilidad": 12,
+        "escritorio": []
+      },
+      {
+        "id": "G_3",
+        "nombre": "G_3",
+        "disponibilidad": 11,
+        "escritorio": []
+      },
+      {
+        "id": "G_4",
+        "nombre": "G_4",
+        "disponibilidad": 14,
+        "escritorio": []
+      },
+      {
+        "id": "G_5",
+        "nombre": "G_5",
+        "disponibilidad": 12,
+        "escritorio": [
+          {
+            "numero": 1,
+            "id": "G_5_1"
+          },
+          {
+            "numero": 2,
+            "id": "G_5_2"
+          },
+          {
+            "numero": 3,
+            "id": "G_5_3"
+          },
+          {
+            "numero": 4,
+            "id": "G_5_4"
+          },
+          {
+            "numero": 5,
+            "id": "G_5_5"
+          },
+          {
+            "numero": 6,
+            "id": "G_5_6"
+          },
+          {
+            "numero": 7,
+            "id": "G_5_7"
+          },
+          {
+            "numero": 8,
+            "id": "G_5_8"
+          },
+          {
+            "numero": 9,
+            "id": "G_5_9"
+          },
+          {
+            "numero": 10,
+            "id": "G_5_10"
+          },
+          {
+            "numero": 11,
+            "id": "G_5_11"
+          },
+          {
+            "numero": 12,
+            "id": "G_5_12"
+          }
+        ]
+      },
+      {
+        "id": "G_6",
+        "nombre": "G_6",
+        "disponibilidad": 11
+      },
+      {
+        "id": "G_7",
+        "nombre": "G_7",
+        "disponibilidad": 12
+      },
+      {
+        "id": "G_8",
+        "nombre": "G_8",
+        "disponibilidad": 15,
+        "escritorio": []
+      },
+      {
+        "id": "G_9",
+        "nombre": "G_9",
+        "disponibilidad": 10,
+        "escritorio": []
+      },
+      {
+        "id": "G_10",
+        "nombre": "G_10",
+        "disponibilidad": 10,
+        "escritorio": []
+      },
+      {
+        "id": "G_11",
+        "nombre": "G_11",
+        "disponibilidad": 13,
+        "escritorio": []
+      },
+      {
+        "id": "G_12",
+        "nombre": "G_12",
+        "disponibilidad": 20,
+        "escritorio": []
+      }
+    ],
+    "Salas de Reuniones": [
+      {
+        "id": "A",
+        "nombre": "Pan de Azúcar",
+        "disponibilidad": 4,
+        "icono": "",
+        "foto": ""
+      },
+      {
+        "id": "B",
+        "nombre": "Ciudad Amurallada",
+        "disponibilidad": 4
+      },
+      {
+        "id": "C",
+        "nombre": "Machu Picchu",
+        "disponibilidad": 7
+      },
+      {
+        "id": "D",
+        "nombre": "Estatua de la Libertad",
+        "disponibilidad": 3
+      },
+      {
+        "id": "E",
+        "nombre": "Tokio",
+        "disponibilidad": 3
+      },
+      {
+        "id": "F",
+        "nombre": "Gran Cañón",
+        "disponibilidad": 1
+      },
+      {
+        "id": "G",
+        "nombre": "Rapa Nui",
+        "disponibilidad": 3
+      },
+      {
+        "id": "H",
+        "nombre": "Big Ben",
+        "disponibilidad": 2
+      },
+      {
+        "id": "I",
+        "nombre": "Chileorienta",
+        "disponibilidad": 2
+      }
+    ]
+  }

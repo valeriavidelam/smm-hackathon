@@ -1,70 +1,101 @@
-# Getting Started with Create React App
+# TO·BE - SPACE MANEGEMENT MODEL<br>
+## 📅 🖥️  Reserva tu escritorio, agenda tus reuniones.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### by
+ <img src="./src/assets/img/logosmall.png" alt="InfinityCodeTeam" class="InfinityCodeTeam">
 
-## Available Scripts
+## Índice
 
-In the project directory, you can run:
+* [1. Tecnologías/Herramientas utilizadas](#1-tecnologías/herramientas-usadas)
+* [2. Preview](#3-preview)
+* [3. Definición del producto](#4-definición-del-producto)
+* [4. Historias de usuario/Features](#5-historias-de-usuario/features)
+* [5. Prototipo](#6-prototipo)
+* [6. Test de usabilidad](#7-test-de-usabilidad)
 
-### `npm start`
+***
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 1. Tecnologías/Herramientas usadas
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- React.js
+- React Hooks
+- Material-Ui
+- Firebase/Firestore
+- CSS
+- GitHub
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 3. Preview
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 4. Definición del producto
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+Presentación producto.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+El _**público objetivo**_ pensado para este proyecto abarca personas entre **25 - 45 años**, 
+usuarios trabajadores de la compañía Everis. Personas  _en su mayoría_ nativas digitales o que se manejan bien con Apps y páginas web.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### DESIGN THINKING
+Hablar sobre el proceso de design thinking / Trello / Miro
+Subir previews del trabajo, research y benchmark.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## 5. Historias de usuario
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### HU 1. "Como usuario quiero poder registrarme con mi correo electrónico".
+_FEATURES: El usuario debe ser capaz de poder crear un usuario a partir de correo electrónico y 
+contraseña._
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* Solución: Crear un display de autenticación con registro de correo electrónico y creación de 
+contraseña.
+* Criterio mínimo de aceptación: 
+        - Que el usuario quede registrado en la base de datos de Firebase.
+        - Que el botón te lleve al muro de inicio de la Red social.
+        - Que nos permita el acceso a usuarios con cuentas válidas.
 
-### Code Splitting
+* Product Backlog:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+        - Crear proyecto en Firebase.
+        - Crear Componente contenedor de AuthEmail.
+        - Crear input de correo y creación de contraseña.
+        - Crear botón de log in.
+        - Crear colección de usuarios en Firebase.
+        - Darle funcionalidad al botón para que valide la cuenta con Firebase y la ingrese.
+        - Crear aler que me avise si los input están vacíos o inválidos.
+        - Crear función que me permita decidir si crear cuenta o iniciar sesión (operador 
+ternario)
+        - Añadir estilo a ambos display de acuerdo al diseño en Figma.
+      
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 6. Prototipo
 
-### Making a Progressive Web App
+### Diseño de baja fidelidad
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+LINK DISEÑO BAJA (MIRO)
 
-### Advanced Configuration
+Se diseñó un prototipo que cumpliera con las condiciones básicas pedidas por los usuarios, que 
+sea 
+interactivo y de fácil acceso. A esta primera interacción le buscamos una estética lúdica que 
+incentivara el uso de la red social.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+### Diseño de alta fidelidad
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+LINK DISEÑO FIGMA
 
-### `npm run build` fails to minify
+### Diseño final
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+        - Versión Desktop
+
+LINK CAPTURA PANTALLA PROTOTIPO
+
+
+
+
+## 7. Test de usabilidad
+ 
+El producto sigue en construcción para ir mejorando la calidad y la experiencia para el usuario.

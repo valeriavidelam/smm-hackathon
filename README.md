@@ -34,6 +34,9 @@
 
 ## 4. Definición del producto
 
+
+¿Quieres ver de qué se trata TO·BE? [CLICK ACÁ](https://vimeo.com/578456869)
+
 _**"To be"**_, del verbo inglés que en presente tiene dos significados SER y ESTAR. 
 Plataforma TO·BE es una plataforma que busca acompañar a la Empresa en el proceso de regreso a la oficina haciendo más cómoda, rápida y segura la ubicación de los colaboradores en sus espacios de trabajo.
 

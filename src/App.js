@@ -14,16 +14,9 @@ import BookingDesk from './components/BookingDesk';
 import SelectDesk from './components/SelectDesk';
 import Desk from './components/Desk';
 import SuccessfulBooking from './components/SuccessfulBooking';
-<<<<<<< HEAD
-<<<<<<< HEAD
-import MyBookings from './components/MyBookings';
-=======
-import SelectDesk from './components/SelectDesk';
->>>>>>> 82e5c750efb951489fd575a6de01b9e9f5241782
-=======
 import MyBookings from './components/MyBookings';
 
->>>>>>> CarolAbcl-master
+
 
 function App() {
 
@@ -48,18 +41,9 @@ return (
           <Route path="/seleccionarescritorio">
             <SelectDesk/>
           </Route>
-<<<<<<< HEAD
-<<<<<<< HEAD
           <Route path="/escritorio">
             <Desk/>
           </Route>
-=======
->>>>>>> 82e5c750efb951489fd575a6de01b9e9f5241782
-=======
-          <Route path="/escritorio">
-            <Desk/>
-          </Route>
->>>>>>> CarolAbcl-master
           <Route path="/reservasala">
             <BookingRoom />
           </Route>

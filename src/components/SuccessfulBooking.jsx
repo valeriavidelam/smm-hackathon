@@ -4,6 +4,7 @@ import { ThemeProvider, Typography} from '@material-ui/core';
 import theme from '../themeConfig';
 import {Grid, Box} from '@material-ui/core'; 
 import Button from '@material-ui/core/Button';
+import Breadcrumbs from './Breadcrumb'
 
 const styleBox = {
   background: '#8bc34a ',
@@ -46,6 +47,7 @@ const SuccessfulBooking = () => {
   return (
     <ThemeProvider theme={theme}>
     <Navbar />
+    <Breadcrumbs />
     <Grid 
       container
       direction="column"

@@ -5,7 +5,7 @@ import Navbar from './Navbar';
 import Desks from './Desks';
 import { Typography } from '@material-ui/core';
 import { Button } from '@material-ui/core';
-
+import Breadcrumbs from './Breadcrumb'
 
  const SelectDesk = () => {
    let [selectDesk, setSelectDesk] = useState('');
@@ -15,6 +15,7 @@ import { Button } from '@material-ui/core';
   return (
     <div className='gridMargin'>
       <Navbar />
+      <Breadcrumbs />
       <div className='titles'>
         <h3>Reservar escritorio</h3>
       </div>

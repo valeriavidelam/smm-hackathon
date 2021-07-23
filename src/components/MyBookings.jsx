@@ -5,6 +5,7 @@ import theme from '../themeConfig';
 import OutlinedCard from './CardDesk';
 import OutlinedCardT from './CardRoom';
 import Breadcrumbs from './Breadcrumb'
+import {auth, db} from '../firebase';
 
 const MyBookings = () => {
     return (

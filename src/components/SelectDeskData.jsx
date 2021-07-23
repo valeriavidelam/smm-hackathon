@@ -6,6 +6,7 @@ import Grid from '@material-ui/core/Grid';
 import escritorio from '../assets/img/g5.PNG'
 import data from '../data/data.json';
 import Desk from './Desk';
+import Breadcrumbs from './Breadcrumb'
 
 const SelectDesk = () => {
   
@@ -15,6 +16,7 @@ const SelectDesk = () => {
   return (
     <div>
       <Navbar />
+      <Breadcrumbs />
       <div className='titles'>
       <h3>Selecciona escritorio</h3></div>
       <Grid container justifyContent="space-around">

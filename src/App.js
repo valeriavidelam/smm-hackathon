@@ -16,13 +16,7 @@ import SelectDesk from './components/SelectDesk';
 import Desk from './components/Desk';
 import SuccessfulBooking from './components/SuccessfulBooking';
 import MyBookings from './components/MyBookings';
-<<<<<<< HEAD
-import SelectRoom from './components/SelectRoom'
 import SuccessfulBooking2 from './components/SuccessfulBooking2';
-=======
-import SuccessfulBooking2 from './components/SuccessfulBooking2';
-
->>>>>>> e6149ff23f9536f67eb744635d83fbf80eb523c0
 
 function App() {
 

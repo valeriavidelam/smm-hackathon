@@ -27,7 +27,10 @@
 
 ## 3. Preview
 
+ <img src="./src/assets/img/preview.gif" alt="Preview" class="designT">
 
+
+[PUEDES PROBAR LO QUE LLEVAMOS HASTA AHORA DEL PRODUCTO HACIENDO CLICK AQUÍ](https://space-management-model.web.app/)
 
 ## 4. Definición del producto
 
@@ -89,7 +92,7 @@ Para ver el trabajo de Research completo  puedes hacer click [AQUÍ](https://mir
 
 ## 6. Prototipo
 
-### Diseño de baja fidelidad
+### DISEÑO DE BAJA FIDELIDAD
 
  <img src="./src/assets/img/prototipobaja.png" alt="PrototipoBajaFidelidad" class="InfinityCodeTeam">
 
@@ -99,17 +102,17 @@ interactivo y de fácil acceso. A esta primera interacción le buscamos una est�
 incentivara el uso de la red social.
 
 
-### Diseño de alta fidelidad
+## DISEÑO DE ALTA FIDELIDAD
 
 <img src="./src/assets/img/prototipoalta.png" alt="PrototipoAltafidelidad" class="InfinityCodeTeam">
 
 Puedes revisar el diseño completo, visitando este [LINK](https://www.figma.com/proto/YZxKJdApabfqqoN4lVm85W/infinity-code-team-library?node-id=347%3A42&scaling=scale-down)
 
-### Diseño final
+### DISEÑO FINAL
 
  - Versión Desktop
 
-LINK CAPTURA PANTALLA PROTOTIPO
+ <img src="./src/assets/img/diseñofinal.png" alt="InfinityCodeTeam" class="InfinityCodeTeam">
 
 
 

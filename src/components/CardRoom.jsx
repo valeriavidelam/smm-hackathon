@@ -34,10 +34,13 @@ import SimpleList from './List'
                             Sala reuniones
                         </Typography>
                         <Typography className={classes.pos} color="Secondary">
-                            Sala
+                            Sala E Tokio
                         </Typography>
                         <Typography className={classes.pos} color="Secondary">
-                            Asunto:
+                            Asunto: Presentación proyecto
+                        </Typography>
+                        <Typography className={classes.pos} color="Secondary">
+                            23 de Julio 10:00hrs
                         </Typography>
                         <SimpleList />
                     </CardContent>

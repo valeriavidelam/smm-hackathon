@@ -24,9 +24,9 @@ const MyBookings = () => {
                 direction="column"
                 justifyContent="center"
                 alignItems="center">
-                <Grid item xs={4}>
+                <Grid >
                     <OutlinedCard />
-                    <Grid item xs={4}>
+                    <Grid >
                         <OutlinedCardT />
                     </Grid>
                 </Grid>

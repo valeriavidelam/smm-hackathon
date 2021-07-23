@@ -4,7 +4,6 @@ import { ThemeProvider, Typography} from '@material-ui/core';
 import theme from '../themeConfig';
 import {Grid, Box} from '@material-ui/core'; 
 import Button from '@material-ui/core/Button';
-import Breadcrumbs from './Breadcrumb'
 
 const styleBox = {
   background: '#8bc34a ',
@@ -47,7 +46,6 @@ const SuccessfulBooking = () => {
   return (
     <ThemeProvider theme={theme}>
     <Navbar />
-    <Breadcrumbs />
     <Grid 
       container
       direction="column"
@@ -56,6 +54,7 @@ const SuccessfulBooking = () => {
       spacing={3}
     >
       <Grid spacing={3}>
+      <Grid item xl={12} sm={6} xs={6} spacing={3}>
       <Box
        style={styleBox}
        mt={20}
@@ -65,20 +64,23 @@ const SuccessfulBooking = () => {
       RESERVA CONFIRMADA
       <hr />
     </Typography>
-     <Typography variant="h6" align="center">
-      Zona de trabajo G_5 Escritorio 10
+    <br></br>
+    <Typography variant="h6" align="center">
+      Sala E - Tokio 
     </Typography>
-    <Typography variant="body1" align="center">
-      30 de Julio <br></br>
-      09:00 - 12:45 hrs.
+     <Typography variant="body1" align="center">
+      23 de Julio <br></br>
+      10:00 - 12:45 hrs.
     </Typography>
     </Box>
       </Grid>
       <Grid spacing={3}>
+      <Grid item xl={12} sm={6} xs={6} spacing={3}>
         <Button style={style}>
            Agregar a Calendario
       </Button>
       </Grid>
+      <Grid spacing={3}>
       <Grid item xs={6} spacing={3}>
       <Button variant="outlined" color="primary" href="/inicio" >
         Volver al inicio

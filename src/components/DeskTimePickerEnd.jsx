@@ -19,7 +19,7 @@ const DeskTimePickerEnd = ({value, onchange}) => {
   // const handleChange = (event) => {
   //   console.log(event);
   // };
-  let hours = ['08:45', '09:45', '10:45', '11:45'];
+  let hours = ['08:45', '09:45', '10:45', '11:45','12:45', '13:45', '14:45', '15:45', '16:45', '17:45', '18:45'];
   return (
     <div>
       <FormControl className={classes.formControl}>

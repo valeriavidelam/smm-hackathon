@@ -13,6 +13,7 @@ const Breadcrumbs = props => {
     const pathnames = pathname.split("/").filter(x => x);
 
     return (
+        <div className='breadCrumb'>
         <MUIBreadcrumbs aria-label="breadcrumb">
             <Link onClick={() => history.push("/inicio")} >Inicio</Link>
             {pathnames.map((name, index) => {
@@ -21,6 +22,7 @@ const Breadcrumbs = props => {
                 return <Link onClick={() => history.push(routeTo)} >{name}</Link>;
             })}
         </MUIBreadcrumbs>
+        </div>
     );
 }
 

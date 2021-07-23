@@ -1,3 +1,4 @@
+
 import '../App.css'
 import React, {useState} from 'react';
 import Navbar from './Navbar';
@@ -8,8 +9,10 @@ import data from '../data/data.json';
 import Desk from './Desk';
 import Breadcrumbs from './Breadcrumb'
 
-const SelectDesk = () => {
+
+// const SelectDesk = () => {
   
+
   const [salas, setSala] = useState(data.zonasDeTrabajo);
   const sala5 = salas.filter((data) => data.id === "G_5");
   // console.log(salas);
@@ -25,29 +28,30 @@ const SelectDesk = () => {
       <h3>Escritorio</h3>
       </div>
       {sala5.map((sala) => (
+
        
-       <Desk
-         id={sala.id}
-         nombre={sala.nombre}
-         disponibilidad={sala.disponibilidad}
-         escritorio={sala.escritorio}
-         setSala={setSala}
-         /> 
-         ))}
+//        <Desk
+//          id={sala.id}
+//          nombre={sala.nombre}
+//          disponibilidad={sala.disponibilidad}
+//          escritorio={sala.escritorio}
+//          setSala={setSala}
+//          /> 
+//          ))}
          
       
       
-      <Typography variant="h6" color="secondary" align='center'>
-      Selecciona un escritorio disponible
-      </Typography>
-      </Grid>
+//       <Typography variant="h6" color="secondary" align='center'>
+//       Selecciona un escritorio disponible
+//       </Typography>
+//       </Grid>
       
      
      
   
      
-  </div>
-  )
-}
+//   </div>
+//   )
+// }
 
-export default SelectDesk
+// export default SelectDesk

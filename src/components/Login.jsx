@@ -6,7 +6,7 @@ import LogoSmm from '../assets/img/LogoSmm.png';
 import Button from '@material-ui/core/Button'
 import Link from '@material-ui/core/Link'
 import Grid from '@material-ui/core/Grid'
-import { Box, ThemeProvider, Typography } from '@material-ui/core';
+import { Box, TextField, ThemeProvider, Typography } from '@material-ui/core';
 import theme from '../themeConfig';
 import {auth, db} from '../firebase';
 import {withRouter} from 'react-router-dom';
@@ -146,7 +146,7 @@ const Login = (props) => {
               <Box 
               textAlign="center">
                 
-              <input
+              <TextField
                 type="email"
                 className="email"
                 placeholder="Email"
@@ -155,7 +155,7 @@ const Login = (props) => {
               />
               <br />
               <br/>
-              <input
+              <TextField
                 type="password"
                 className="password"
                 placeholder="Contraseña"

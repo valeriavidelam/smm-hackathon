@@ -16,7 +16,7 @@ import Divider from '@material-ui/core/Divider';
       }));
      
       
-      const SimpleList = () => {
+      const MultiList = () => {
         const classes = useStyles();
       
         return (
@@ -28,9 +28,15 @@ import Divider from '@material-ui/core/Divider';
           <img src={DeletelBtn} alt="" onClick/>
         </ListItem>
         <Divider />
+        <ListItem>
+          <ListItemText secondary="Enrique Morales" />
+          <img src={EmailBtn} alt="" onClick/>
+          <img src={DeletelBtn} alt="" onClick/>
+        </ListItem>
+        <Divider />
       </List>
           </div>
         );
       }
 
-export default SimpleList
+export default MultiList

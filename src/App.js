@@ -15,11 +15,10 @@ import SelectDesk from './components/SelectDesk';
 import Desk from './components/Desk';
 import SuccessfulBooking from './components/SuccessfulBooking';
 import MyBookings from './components/MyBookings';
-
-
+import SelectRoom from './components/SelectRoom'
+import SuccessfulBooking2 from './components/SuccessfulBooking2';
 
 function App() {
-
 
 return (
   <ThemeProvider theme={theme}>
@@ -35,6 +34,9 @@ return (
           <Route path="/reservaexitosa">
             <SuccessfulBooking />
           </Route>
+          <Route path="/reservaexitosareu">
+            <SuccessfulBooking2 />
+          </Route>
           <Route path="/reservaescritorio">
             <BookingDesk/>
           </Route>
@@ -46,6 +48,9 @@ return (
           </Route>
           <Route path="/reservasala">
             <BookingRoom />
+          </Route>
+          <Route path="/seleccionarsala">
+            <SelectRoom />
           </Route>
           <Route path="/buscarcolaborador">
             <SearchCollaborator />

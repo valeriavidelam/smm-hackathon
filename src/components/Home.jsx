@@ -44,54 +44,6 @@ const Home = () => {
             </Typography>
           </Box>
         </Grid>
-        <Grid
-          container
-          direction="row"
-          justifyContent="center"
-          alignItems="center"
-          spacing={1}
-        >
-          <Grid item xl={12} sm={6} xs={6} spacing={3}>
-
-            <Button style={style} href="/reservaescritorio">
-              <ImportantDevicesTwoToneIcon />
-              <Typography variant="body2" color="white" align="center">
-                ¿Qué quieres hacer?
-              </Typography>
-         </Button>
-
-          </Grid>
-          <Grid item xs={6} spacing={3}>
-            <Button style={style} href="/reservasala">
-              <PeopleIcon />
-              AGENDAR REUNIÓN
-            </Button>
-          </Grid>
-        </Grid>
-
-        <Grid
-          container
-          direction="row"
-          justifyContent="center"
-          alignItems="center"
-          spacing={1}
-        >
-          <Grid item xs={6} spacing={3}>
-            <Button style={style} href="/buscarcolaborador">
-              <SearchIcon />
-              BUSCAR COLABORADOR
-            </Button>
-          </Grid>
-
-
-          <Grid item xs={6} spacing={3}>
-            <Button style={style} href="/misreservas">
-              <EventAvailableIcon />
-              MIS RESERVAS
-            </Button>
-          </Grid>
-        </Grid>
-
       <Grid 
       container
       direction="column"

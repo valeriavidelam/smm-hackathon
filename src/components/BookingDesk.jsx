@@ -14,8 +14,8 @@ import {
 } from '@material-ui/pickers';
 import esLocale from 'date-fns/locale/es';
 import Office from './Offices';
-import Breadcrumbs from './Breadcrumb';
 import { useHistory } from "react-router-dom";
+import Breadcrumbs from './Breadcrumb';
 
 
 const BookingDesk = () => {
@@ -36,9 +36,13 @@ const BookingDesk = () => {
     console.log(selectedDate);
     console.log(selectedFromHour);
     console.log(selectedUntilHour);
-    setFloor('Piso 3 - Alameda')
-    setAvalaibleOffice(true);
-    setMessage('Selecciona la zona de trabajo que quieres reservar');
+    if (selectedFromHour < selectedUntilHour){
+      setFloor('Piso 3 - Alameda')
+      setAvalaibleOffice(true);
+      setMessage('Selecciona la zona de trabajo que quieres reservar');
+    } else {
+      alert('Por favor revisar las horas seleccionadas')
+    }
   }
   let history= useHistory();
 
@@ -75,7 +79,11 @@ const BookingDesk = () => {
           </div>
         <button onClick={addDate}>Confirmar</button>
         <Typography variant="h6" color="secondary" align='center'>{floor}</Typography>
-        { avalaibleOffice ? <Office onclick={(e) => {setOffice(e.name); history.push("/seleccionarescritorio")}}/> 
+        { avalaibleOffice ? <Office onclick={(e) => {setOffice(e.name); 
+          console.log(office); 
+          setTimeout(function(){ history.push("/seleccionarescritorio"); }, 800);
+          //localStorage.setItem('hola');
+          }}/> 
         : <img src={oficinas} alt="plano" width="350px"/>}
         <Typography variant="h6" color="secondary" align='center'>{message}</Typography>
         <Typography variant="h6" color="secondary" align='center'>{office}</Typography>

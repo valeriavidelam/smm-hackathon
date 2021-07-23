@@ -12,7 +12,9 @@ const Profile = () => {
       <br />
       <br />
       <Breadcrumbs />
-      <h1>Acá va el perfil</h1>
+      <div className='titles'>
+      <h3>Mi Perfil</h3>
+      </div>
       <Button color="primary" 
       variant="outlined"
       disableElevation>

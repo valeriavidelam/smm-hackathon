@@ -3,8 +3,8 @@
 }
 
 .mainLogo{
-  margin-top: 20px;
-  margin-left: 30px;
+  margin-top: 10px;
+  margin-left: 25px;
 }
 
 .gridMargin{
@@ -15,6 +15,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.breadCrumb{
+  margin-left: 10px;
 }
 
 .hourDesk{

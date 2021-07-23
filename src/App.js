@@ -18,8 +18,8 @@ import SuccessfulBooking from './components/SuccessfulBooking';
 import MyBookings from './components/MyBookings';
 import SuccessfulBooking2 from './components/SuccessfulBooking2';
 
-function App() {
 
+function App() {
 
 return (
   <ThemeProvider theme={theme}>

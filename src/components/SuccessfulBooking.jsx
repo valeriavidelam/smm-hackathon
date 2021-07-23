@@ -53,7 +53,7 @@ const SuccessfulBooking = () => {
       alignItems="center"
       spacing={3}
     >
-      <Grid item xl={12} sm={6} xs={6} spacing={3}>
+      <Grid spacing={3}>
       <Box
        style={styleBox}
        mt={20}
@@ -63,17 +63,16 @@ const SuccessfulBooking = () => {
       RESERVA CONFIRMADA
       <hr />
     </Typography>
-    <br></br>
-    <Typography variant="h6" align="center">
-      Zona de trabajo G_5
+     <Typography variant="h6" align="center">
+      Zona de trabajo G_5 Escritorio 10
     </Typography>
     <Typography variant="body1" align="center">
-      23 de Julio <br></br>
-      10:00 - 12:45 hrs.
+      30 de Julio <br></br>
+      09:00 - 12:45 hrs.
     </Typography>
     </Box>
       </Grid>
-      <Grid item xl={12} sm={6} xs={6} spacing={3}>
+      <Grid spacing={3}>
         <Button style={style}>
            Agregar a Calendario
       </Button>

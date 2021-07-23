@@ -102,7 +102,7 @@ const Navbar = () => {
                     <MenuItem onClick={()=> history.push('reservasala')}>Reservar sala</MenuItem>
                     <MenuItem onClick={()=> history.push('buscarcolaborador')}>Buscar colaborador</MenuItem>
                     <MenuItem onClick={handleClose}>Reportar un problema</MenuItem>
-                    <MenuItem onClick={handleClose}>Mis reservas</MenuItem>
+                    <MenuItem onClick={()=> history.push('misreservas')}>Mis reservas</MenuItem>
                     <MenuItem onClick={()=> history.push('perfil')}>Mi perfil</MenuItem>
                     <MenuItem onClick={openLogoutConfirmation}>Cerrar sesión</MenuItem>
                   </MenuList>

@@ -1,4 +1,4 @@
-# TO·BE - SPACE MANEGEMENT MODEL<br>
+# TO·BE - SPACE MANAGEMENT MODEL<br>
 ## 📅 🖥️  Reserva tu escritorio, agenda tus reuniones.
 
 ### by
@@ -31,7 +31,7 @@
 
 ## 4. Definición del producto
 
-"To be", del verbo inglés que en presente tiene dos significados SER y ESTAR. 
+_**"To be"**_, del verbo inglés que en presente tiene dos significados SER y ESTAR. 
 Plataforma TO·BE es una plataforma que busca acompañar a la Empresa en el proceso de regreso a la oficina haciendo más cómoda, rápida y segura la ubicación de los colaboradores en sus espacios de trabajo.
 
 Es una aplicación web diseñada para los colaboradores de Everis que permite la reserva de escritorios, agendar reuniones, revisar reservas y disponibilidad.
@@ -72,26 +72,26 @@ Para ver el trabajo de Research completo  puedes hacer click [AQUÍ](https://mir
 ## 5. Historias de usuario
 
 
-### HU 1. "Como usuario quiero revisar los espacios disponibles y los que están usados (espacios de trabajo, salas de reuniones, comedor u otros). Para ver mis opciones de ir a la oficina.".
+        - HU 1. "Como usuario quiero revisar los espacios disponibles y los que están usados (espacios de trabajo, salas de reuniones, comedor u otros). Para ver mis opciones de ir a la oficina.".
 
-### HU 2. "Como usuario quiero seleccionar un espacio disponible para poder ir a trabajar de manera presencial.".
+        - HU 2. "Como usuario quiero seleccionar un espacio disponible para poder ir a trabajar de manera presencial.".
 
-### HU 3. "Como administrador quiero que muestre fecha, hora y tiempo de reserva considerando un espacio para sanitización."
+        - HU 3. "Como administrador quiero que muestre fecha, hora y tiempo de reserva considerando un espacio para sanitización."
 
-### HU 4. "Como usuario quiero poder eliminar una reserva para que el espacio quede disponible si no lo utilizaré."
+        - HU 4. "Como usuario quiero poder eliminar una reserva para que el espacio quede disponible si no lo utilizaré."
 
-### HU 5. "Como usuario quiero ver cuales de mis compañeros están en la oficina para contactarlos."
+        - HU 5. "Como usuario quiero ver cuales de mis compañeros están en la oficina para contactarlos."
 
-### HU 6. "Como usuario quiero recibir un mensaje y correo para saber cuando mi reserva este confirmada."
+        - HU 6. "Como usuario quiero recibir un mensaje y correo para saber cuando mi reserva este confirmada"
 
-### HU 7. "Como usuario quiero iniciar sesión con mi correo y contraseña para ingresar a la aplicación."
+        - HU 7. "Como usuario quiero iniciar sesión con mi correo y contraseña para ingresar a la aplicación."
 
 
 ## 6. Prototipo
 
-### Diseño de baja fidelida
+### Diseño de baja fidelidad
 
- <img src="./src/assets/img/prototipobaja.png" alt="InfinityCodeTeam" class="InfinityCodeTeam">
+ <img src="./src/assets/img/prototipobaja.png" alt="PrototipoBajaFidelidad" class="InfinityCodeTeam">
 
 Se diseñó un prototipo que cumpliera con las condiciones básicas pedidas por los usuarios, que 
 sea 
@@ -101,13 +101,13 @@ incentivara el uso de la red social.
 
 ### Diseño de alta fidelidad
 
-LINK DISEÑO FIGMA
+<img src="./src/assets/img/prototipoalta.png" alt="PrototipoAltafidelidad" class="InfinityCodeTeam">
 
-Puedes revisar el diseño completo, visitando este link
+Puedes revisar el diseño completo, visitando este [LINK](https://www.figma.com/proto/YZxKJdApabfqqoN4lVm85W/infinity-code-team-library?node-id=347%3A42&scaling=scale-down)
 
 ### Diseño final
 
-        - Versión Desktop
+ - Versión Desktop
 
 LINK CAPTURA PANTALLA PROTOTIPO
 

@@ -125,48 +125,55 @@
         "id": "A",
         "nombre": "Pan de Azúcar",
         "disponibilidad": 4,
-        "icono": "",
-        "foto": ""
+        "imagen": "https://i.ibb.co/HghTmn5/cristo-red.png"
       },
       {
         "id": "B",
         "nombre": "Ciudad Amurallada",
-        "disponibilidad": 4
+        "disponibilidad": 4,
+        "imagen":"https://i.ibb.co/gFWJTd4/muralla.png"
       },
       {
         "id": "C",
         "nombre": "Machu Picchu",
-        "disponibilidad": 7
+        "disponibilidad": 7,
+        "imagen": "https://i.ibb.co/KKgN5Yb/machu-Picchu.png"
       },
       {
         "id": "D",
         "nombre": "Estatua de la Libertad",
-        "disponibilidad": 3
+        "disponibilidad": 3,
+        "imagen": "https://i.ibb.co/jVSZB29/estatua-Libertad.png"
       },
       {
         "id": "E",
         "nombre": "Tokio",
-        "disponibilidad": 3
+        "disponibilidad": 3,
+        "imagen": "https://i.ibb.co/cbt7Fzc/tokio.png"
       },
       {
         "id": "F",
         "nombre": "Gran Cañón",
-        "disponibilidad": 1
+        "disponibilidad": 1,
+        "imagen": "https://i.ibb.co/6nXPfHT/gran-Canon.png"
       },
       {
         "id": "G",
         "nombre": "Rapa Nui",
-        "disponibilidad": 3
+        "disponibilidad": 3,
+        "imagen": "https://i.ibb.co/FBzTpX2/rapaNui.png"
       },
       {
         "id": "H",
         "nombre": "Big Ben",
-        "disponibilidad": 2
+        "disponibilidad": 2,
+        "imagen":"https://i.ibb.co/8dFRmtp/bigBen.png"
       },
       {
         "id": "I",
         "nombre": "Chileorienta",
-        "disponibilidad": 2
+        "disponibilidad": 2,
+        "imagen":"https://i.ibb.co/g3phDr2/oficina.png"
       }
     ]
   }

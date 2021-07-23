@@ -11,7 +11,6 @@ import EventAvailableIcon from '@material-ui/icons/EventAvailable';
 import Breadcrumbs from './Breadcrumb';
 
 
-
 const style = {
   background: 'linear-gradient(50deg, #8bc34a 30%, #8bc34a 90%)',
   borderRadius: 30,

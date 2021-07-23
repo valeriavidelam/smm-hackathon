@@ -53,7 +53,7 @@ const SuccessfulBooking = () => {
       alignItems="center"
       spacing={3}
     >
-      <Grid item xl={12} sm={6} xs={6} spacing={3}>
+      <Grid spacing={3}>
       <Box
        style={styleBox}
        mt={20}
@@ -73,12 +73,12 @@ const SuccessfulBooking = () => {
     </Typography>
     </Box>
       </Grid>
-      <Grid item xl={12} sm={6} xs={6} spacing={3}>
+      <Grid spacing={3}>
         <Button style={style}>
            Agregar a Calendario
       </Button>
       </Grid>
-      <Grid item xs={6} spacing={3}>
+      <Grid spacing={3}>
       <Button variant="outlined" color="primary" href="/inicio" >
         Volver al inicio
       </Button>
